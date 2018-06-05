@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <form action="" method="POST" role="form">
+      <legend>Add a link</legend>
+
+      <div class="form-group">
+        <label for="">Title:</label>
+        <input [formControl]="title" type="text" class="form-control" id="title" name="title" placeholder="Input Title">
+        <small class="text-danger" *ngIf="form.get('title') != null && form.get('title').touched && form.get('title').hasError('required')">This field is require</small>
+      </div>
+
+      <div class="form-group">
+        <label for="">Link:</label>
+        <input [formControl]="link" type="text" class="form-control" id="link" name="link" placeholder="Input Title">
+        <small class="text-danger" *ngIf="form.get('link') != null && form.get('link').touched && form.get('link').hasError('required')">This field is require</small>
+      </div>
+
+      <button [disabled]="!form.valid" type="button" class="btn btn-primary" (click)="addArticle()">Submit Link</button>
+    </form>
+  </div>
+</div>
