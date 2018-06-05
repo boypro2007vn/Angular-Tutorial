@@ -1,0 +1,29 @@
+.four-wide {
+  width: 30%;
+  height: 90px;
+  text-align: center;
+  background-color: antiquewhite;
+  float: left;
+}
+
+.six-wide {
+  width: 60%;
+  height: 90px;
+  padding-left: 15px;
+  background-color: aquamarine;
+  float: left;
+}
+
+.value {
+  font-size: 2.5em;
+}
+
+.title {
+  margin-top: 7px;
+  line-height: 1em;
+  font-size: 2em;
+}
+
+.btn-action a:first-child {
+  margin-right: 10px;
+}
